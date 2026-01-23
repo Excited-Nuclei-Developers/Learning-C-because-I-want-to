@@ -1,0 +1,17 @@
+{"Errors":
+    {"Error Code": "fatal error",
+        {
+            "error message": "HelloWorld.cpp: In function 'int main()':
+                                HelloWorld.cpp:4:10: error: 'cout' is not a member of 'std'
+                                    4 |     std::cout<<"hello, Shubham!";
+                                    |          ^~~~
+                                HelloWorld.cpp:1:1: note: 'std::cout' is defined in header '<iostream>'; this is probably fixable by adding '#include <iostream>'
+                                +++ |+#include <iostream>
+                                    1 | // # include <iostream>",
+
+            "Cause": "#include <iostream> missing from the statement",
+
+            "Solution": "Add #include <iostream>"
+        }
+    }
+}
